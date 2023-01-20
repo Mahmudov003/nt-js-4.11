@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Products</h1>
+    <div class="card">
+        <div></div>
+    </div>
+
+    <script>
+        const card = document.querySelector('.card')
+        fetch('https://rare-plants-decide-213-230-120-170.loca.lt/api/products')
+        .then(ret => {
+            return ret.json();
+        }) .then(res => {
+            const markUp = `<div>${res.products}</div>`;
+            document.body.append(card)
+            console.log(markUp);
+        })
+    </script>
+</body>
+</html>

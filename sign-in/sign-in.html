@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #form-login { 
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+            width: 500px;
+            /* height: 400px; */
+            margin: 50px auto;
+            background: rgba(102, 141, 63, 0.724);
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        input {
+            width: 450px;
+            height: 30px;
+            border-radius: 5px;
+            padding: 5px;
+            /* margin-top: 20px; */
+        }
+        button {
+            margin: auto;
+            width: 90px;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+<div class="card">
+    <h1 style="color: aliceblue;">Sign In</h1>
+    <form action="" id="form-login">
+        <input type="number" id="phone" placeholder="phone">
+        <br>
+        <input type="password" id="password" placeholder="password">
+        <p style="color: beige;">Agarda siz royhatdan o'tmagan bo'lsangiz bu havolani bosing <a href="../sign-up/sign-up.html">Sign Up?</a></p>
+        <button type="submit" id="btn">Submit</button>
+    </form>
+</div>
+
+    <script src="../sign-in/sign-in.js"></script>
+</body>
+</html>
